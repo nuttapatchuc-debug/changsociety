@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="gallery"></div>
+
+<script>
+  // รายชื่อไฟล์ที่คุณมีใน IMG_2787.png
+  const files = [
+    "CSC-1.png", "CSC-2.png", "CSC-3.png", "CSC-4.png", 
+    "CSC-10.png", "CSC-11.png", "CSC-12.png", "CSC-13.png", "CSC-14.png"
+  ];
+
+  const gallery = document.getElementById('gallery');
+  
+  files.forEach(file => {
+    const img = document.createElement('img');
+    img.src = file;
+    img.style.display = 'block'; // ให้เรียงลงมาเป็นแถว
+    img.style.marginBottom = '10px'; // เว้นระยะห่างแต่ละรูป
+    gallery.appendChild(img);
+  });
+</script>
+
+</body>
+</html>
