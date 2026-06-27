@@ -1,0 +1,9 @@
+<div id="contact">
+
+  <h2>ติดต่อ</h2>
+
+  <p><strong>โทร:</strong> 062-424-4939</p>
+
+  <p><strong>LINE:</strong> @changsociety</p>
+
+</div>
