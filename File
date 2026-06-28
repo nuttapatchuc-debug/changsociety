@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+</head>
+<body>
+    <div id="gallery"></div>
+    <script>
+        const files = [
+            "1654D7B3-3B2F-414F-907F-708E65E00563.png",
+            "8C653650-4AEF-4E6E-8AB0-D1391104A3A2.png",
+            "9F60C9AC-101A-447E-BC04-03970F49FA54.png",
+            "IMG_1658.png",
+            "IMG_1659.png"
+        ];
+        const container = document.getElementById('gallery');
+        files.forEach(f => {
+            const img = document.createElement('img');
+            img.src = f;
+            img.style.display = 'block';
+            img.style.width = '100%';
+            img.style.marginBottom = '10px';
+            container.appendChild(img);
+        });
+    </script>
+</body>
+</html>
